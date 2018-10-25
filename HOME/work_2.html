@@ -56,37 +56,37 @@ function selectOptions(){
 }
 selectOptions();
 /*выбераю определенный оптион*/
-// var select = document.querySelector('select');
-// select.onchange = function(){
-//   var thisSel = this.value;
-//   console.log(thisSel)
-// };
+var select = document.querySelector('select');
+select.onchange = function(){
+  var thisSel = this.value;
+  console.log(thisSel)
+};
 
-// /*фильтрую масив*/
-// var selectOP = select.onchange();
-// var task = [];
+/*фильтрую масив*/
+var selectOP = select.onchange();
+var task = [];
 
-// function getFilter(array){
-//   array.forEach(function (array) {
-//       if (array.age == selectOP) {
-//           task.push(array);
-//       }
-//   });
-// }
-// getFilter(users);
-// console.log(task)
+function getFilter(array){
+  array.forEach(function (array) {
+      if (array.age == selectOP) {
+          task.push(array);
+      }
+  });
+}
+getFilter(users);
+console.log(task)
 
-// /*вывожу в штмл*/
-// function createLi(){
-//   for (var i = 0; i < task.length; i++) {
-//     var ul = document.createElement('ul');
-//     var li = document.createElement('li');
-//       li.innerText = task[i].name;
-//     ul.appendChild(li);
-//     document.getElementById('res').appendChild(ul);
-//   }
-// }
-// createLi();
+/*вывожу в штмл*/
+function createLi(){
+  for (var i = 0; i < task.length; i++) {
+    var ul = document.createElement('ul');
+    var li = document.createElement('li');
+      li.innerText = task[i].name;
+    ul.appendChild(li);
+    document.getElementById('res').appendChild(ul);
+  }
+}
+createLi();
 
 </script>
 
