@@ -47,46 +47,6 @@ let users = [
  {id: 8, name: "Jim", age: "40"},
  {id: 9, name: "Willy", age: "20"}
 ]
-/*создаю список в селекте*/
-function selectOptions(){
-  var s =  usersSelect.options;
-  s[s.length]= new Option('20',20);
-  s[s.length]= new Option('30',30);
-  s[s.length]= new Option('40',40);
-}
-selectOptions();
-/*выбераю определенный оптион*/
-// var select = document.querySelector('select');
-// select.onchange = function(){
-//   var thisSel = this.value;
-//   console.log(thisSel)
-// };
-
-// /*фильтрую масив*/
-// var selectOP = select.onchange();
-// var task = [];
-
-// function getFilter(array){
-//   array.forEach(function (array) {
-//       if (array.age == selectOP) {
-//           task.push(array);
-//       }
-//   });
-// }
-// getFilter(users);
-// console.log(task)
-
-// /*вывожу в штмл*/
-// function createLi(){
-//   for (var i = 0; i < task.length; i++) {
-//     var ul = document.createElement('ul');
-//     var li = document.createElement('li');
-//       li.innerText = task[i].name;
-//     ul.appendChild(li);
-//     document.getElementById('res').appendChild(ul);
-//   }
-// }
-// createLi();
 
 </script>
 
